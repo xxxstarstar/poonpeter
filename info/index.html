@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="🤘🏻rockroll">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>SITENAME</title>
+    <meta name="description" content="SITENAME"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta property="og:title" content="SITENAME"/>
+    <meta property="og:description" content="DESC"/>
+    <meta property="og:image" content="assets/img/fb.png?1653551336770"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <!-- <link rel="image_src" type="image/jpeg" href="assets/img/fb.png?1653551336770"/> -->
+    <link rel="shortcut icon" type="image/ico" href="favicon.png"/>
+    <!-- [if IE]-->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <!-- [endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/css/swiper.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.4.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+  <link href="assets/css/vendors-chunk.css" rel="stylesheet"><link href="assets/css/commons-chunk.css" rel="stylesheet"></head>
+  <!-- TODO: 每頁的 body 會有不同 class-->
+  <body class="page-index is-imgloading">
+    <!-- #app start-->
+    <div id="app">
+      <main>
+        <!--
+        每頁 content start
+          ######  ########    ###    ########  ######## 
+        ##    ##    ##      ## ##   ##     ##    ##    
+        ##          ##     ##   ##  ##     ##    ##    
+          ######     ##    ##     ## ########     ##    
+              ##    ##    ######### ##   ##      ##    
+        ##    ##    ##    ##     ## ##    ##     ##    
+          ######     ##    ##     ## ##     ##    ##    
+        -->
+        <div class="block block-swiper rollin rollout">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/beautiful-sky-with-mountains-distance.jpg)"></div>
+                <div class="container" style="height:100vh;min-height:100vh;">
+                  <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                    <div class="col-12">
+                      <div>
+                        <div class="h2" style="color: green">大圖輪播含文字範例1</div>
+                        <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/beautiful-sky-with-mountains-distance.jpg)"></div>
+                <div class="container" style="height:100vh;min-height:100vh;">
+                  <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                    <div class="col-12">
+                      <div>
+                        <div class="h2" style="color: green">大圖輪播含文字範例2</div>
+                        <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/beautiful-sky-with-mountains-distance.jpg)"></div>
+                <div class="container" style="height:100vh;min-height:100vh;">
+                  <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                    <div class="col-12">
+                      <div>
+                        <div class="h2" style="color: green">大圖輪播含文字範例3</div>
+                        <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/beautiful-sky-with-mountains-distance.jpg)"></div>
+                <div class="container" style="height:100vh;min-height:100vh;">
+                  <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                    <div class="col-12">
+                      <div>
+                        <div class="h2" style="color: green">大圖輪播含文字範例4</div>
+                        <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/beautiful-sky-with-mountains-distance.jpg)"></div>
+                <div class="container" style="height:100vh;min-height:100vh;">
+                  <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                    <div class="col-12">
+                      <div>
+                        <div class="h2" style="color: green">大圖輪播含文字範例5</div>
+                        <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+                <div class="block block-image position-relative rollin" style="height:100vh;min-height:100vh;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:100vh;min-height:100vh;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">單張圖片含文字範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block block-youtube rollin rollout">
+                  <div class="iframe-outer-16to9">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KWiIZ7vydGI" data-src="https://www.youtube.com/embed/KWiIZ7vydGI" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                  </div>
+                </div>
+
+                <div class="block block-imgtext">
+                  <div class="row no-gutters h-100 rollin justify-content-start align-items-center text-center rollin-x flex-row">
+                    <div class="col-12 align-self-stretch col-lg-6" style="min-height: 540px;">
+                      <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/clouds-g527074ecb_1920.jpg)"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="container w-100">
+                        <div class="h2">左右進場範例
+                        </div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-imgtext">
+                  <div class="row no-gutters h-100 rollin justify-content-start align-items-center text-center rollin-x flex-row-reverse">
+                    <div class="col-12 align-self-stretch col-lg-6" style="min-height: 540px;">
+                      <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/clouds-g527074ecb_1920.jpg)"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="container w-100">
+                        <div class="h2">左右進場範例
+                        </div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-imgtext">
+                  <div class="row no-gutters h-100 rollin justify-content-start align-items-center text-center rollin-y flex-row">
+                    <div class="col-12 align-self-stretch col-lg-6" style="min-height: 540px;">
+                      <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/clouds-g527074ecb_1920.jpg)"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="container w-100">
+                        <div class="h2">上下進場範例
+                        </div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-imgtext">
+                  <div class="row no-gutters h-100 rollin justify-content-start align-items-center text-center rollin-y flex-row-reverse">
+                    <div class="col-12 align-self-stretch col-lg-6" style="min-height: 540px;">
+                      <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/clouds-g527074ecb_1920.jpg)"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="container w-100">
+                        <div class="h2">上下進場範例
+                        </div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-imgtext">
+                  <div class="row no-gutters h-100 rollin justify-content-start align-items-center text-center rollin-fade flex-row">
+                    <div class="col-12 align-self-stretch col-lg-6" style="min-height: 540px;">
+                      <div class="bg position-absolute inset-0" style="background-image:url(assets/img/cloud/clouds-g527074ecb_1920.jpg)"></div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="container w-100">
+                        <div class="h2">原地淡入範例
+                        </div>
+                        <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-image position-relative rollin rollin-t" style="height:540px;min-height:540px;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:540px;min-height:540px;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">上進場範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-image position-relative rollin rollin-b" style="height:540px;min-height:540px;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:540px;min-height:540px;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">下進場範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-image position-relative rollin rollin-l" style="height:540px;min-height:540px;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:540px;min-height:540px;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">左進場範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block block-image position-relative rollin rollin-r" style="height:540px;min-height:540px;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:540px;min-height:540px;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">右進場範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-sticky"><img class="img" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/></div>
+                <div class="block block-image position-relative rollin stick-bg" style="height:100vh;min-height:100vh;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:100vh;min-height:100vh;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">視差效果範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-sticky"><img class="img" src="assets/img/cloud/vladimir-anikeev-IM8ZyYaSW6g-unsplash.jpg"/></div>
+                <div class="block block-image position-relative rollin stick-bg" style="height:100vh;min-height:100vh;">
+                  <div class="position-absolute inset-0">
+                    <div class="bg h-100" style="background-image:url(assets/img/cloud/beautiful-blue-sky-with-white-clouds.jpg)"></div>
+                  </div>
+                  <div class="container" style="height:100vh;min-height:100vh;">
+                    <div class="row no-gutters h-100 justify-content-center align-items-center text-center">
+                      <div class="col-12">
+                        <div>
+                          <div class="h2" style="color: black">視差效果範例
+                          </div>
+                          <div class="p" style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-listed rollin rollout">
+                  <div class="swiper-container d-lg-none">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="swiper-slide">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container pt-30px d-none d-lg-block">
+                    <div class="row">
+                      <div class="col">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="col">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-listed rollin rollout">
+                  <div class="swiper-container d-lg-none">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="swiper-slide">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="swiper-slide">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container pt-30px d-none d-lg-block">
+                    <div class="row">
+                      <div class="col">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="col">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                      <div class="col">
+                                <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
+                                  <div class="h2">列表物件標題
+                                  </div>
+                                  <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
+                                  </div>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+        <div class="block-menu">
+          <div class="row no-gutters">
+            <div class="col col-lg-12"><a class="d-block py-lg-20px" href="#TEST"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjUgMTYuNDIwN1YxOS45NTY5QzIxLjUwMDEgMjAuMjEwMSAyMS40MDQyIDIwLjQ1MzkgMjEuMjMxNiAyMC42MzkyQzIxLjA1OSAyMC44MjQ0IDIwLjgyMjYgMjAuOTM3MyAyMC41NyAyMC45NTVDMjAuMTMzIDIwLjk4NSAxOS43NzYgMjEuMDAxIDE5LjUgMjEuMDAxQzEwLjY2MyAyMS4wMDEgMy41IDEzLjgzNzYgMy41IDUuMDAwMTFDMy41IDQuNzI0MSAzLjUxNSA0LjM2NzA4IDMuNTQ2IDMuOTMwMDVDMy41NjM3MiAzLjY3NzQ4IDMuNjc2NTggMy40NDEwNCAzLjg2MTggMy4yNjg0MkM0LjA0NzAzIDMuMDk1ODEgNC4yOTA4MiAyLjk5OTg5IDQuNTQ0IDNIOC4wOEM4LjIwNDA0IDIuOTk5ODcgOC4zMjM3IDMuMDQ1ODYgOC40MTU3MyAzLjEyOTAzQzguNTA3NzYgMy4yMTIxOSA4LjU2NTYgMy4zMjY2IDguNTc4IDMuNDUwMDNDOC42MDEgMy42ODAwNCA4LjYyMiAzLjg2MzA1IDguNjQyIDQuMDAyMDZDOC44NDA3MyA1LjM4OTA2IDkuMjQ4IDYuNzM4MDQgOS44NSA4LjAwMzI4QzkuOTQ1IDguMjAzMjkgOS44ODMgOC40NDIzIDkuNzAzIDguNTcwMzFMNy41NDUgMTAuMTEyNEM4Ljg2NDQ1IDEzLjE4NyAxMS4zMTQ1IDE1LjYzNzIgMTQuMzg5IDE2Ljk1NjhMMTUuOTI5IDE0LjgwMjdDMTUuOTkxOSAxNC43MTQ2IDE2LjA4MzggMTQuNjUxNSAxNi4xODg1IDE0LjYyNDNDMTYuMjkzMiAxNC41OTcxIDE2LjQwNDIgMTQuNjA3NSAxNi41MDIgMTQuNjUzNkMxNy43NjcgMTUuMjU0NSAxOS4xMTU2IDE1LjY2MDggMjAuNTAyIDE1Ljg1ODdDMjAuNjQxIDE1Ljg3ODcgMjAuODI0IDE1LjkwMDcgMjEuMDUyIDE1LjkyMjdDMjEuMTc1MiAxNS45MzU0IDIxLjI4OTQgMTUuOTkzMyAyMS4zNzI0IDE2LjA4NTNDMjEuNDU1MyAxNi4xNzczIDIxLjUwMDIgMTYuMjk2OSAyMS41IDE2LjQyMDdaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"/>
+                <div class="span">電話聯絡</div></a></div>
+            <div class="col col-lg-12"><a class="d-block py-lg-20px" href="#TEST"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS44MTEyIDIxLjczMjNDMTMuMjI4MiAyMC40ODQ1IDE5IDE1LjA3NjEgMTkgOS43NzI3M0MxOSA3LjcxMTI3IDE4LjIwOTggNS43MzQyNSAxNi44MDMzIDQuMjc2NThDMTUuMzk2OCAyLjgxODkxIDEzLjQ4OTEgMiAxMS41IDJDOS41MTA4OCAyIDcuNjAzMjIgMi44MTg5MSA2LjE5NjcgNC4yNzY1OEM0Ljc5MDE4IDUuNzM0MjUgNCA3LjcxMTI3IDQgOS43NzI3M0M0IDE1LjA3NjEgOS43NzE4NCAyMC40ODQ1IDExLjE4ODggMjEuNzMyM0MxMS4zNjg0IDIxLjg5MDUgMTEuNjMxNiAyMS44OTA1IDExLjgxMTIgMjEuNzMyM1pNMTQuMTQyOSA5Ljg1NzA3QzE0LjE0MjkgMTEuMjc3MiAxMi45OTE2IDEyLjQyODUgMTEuNTcxNCAxMi40Mjg1QzEwLjE1MTMgMTIuNDI4NSA5IDExLjI3NzIgOSA5Ljg1NzA3QzkgOC40MzY5MSAxMC4xNTEzIDcuMjg1NjQgMTEuNTcxNCA3LjI4NTY0QzEyLjk5MTYgNy4yODU2NCAxNC4xNDI5IDguNDM2OTEgMTQuMTQyOSA5Ljg1NzA3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="/>
+                <div class="span">地圖導航</div></a></div>
+            <div class="col col-lg-12"><a class="d-block py-lg-20px" href="#TEST"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjIyODUgMjEuNjE2NkMxMy41MDQ2IDIxLjYxNjYgMTMuNzI4NSAyMS4zOTI3IDEzLjcyODUgMjEuMTE2NlYxMy4yNDMyQzEzLjcyODUgMTMuMDc3NiAxMy44NjI4IDEyLjk0MzIgMTQuMDI4NSAxMi45NDMySDE2LjQyNDlDMTYuNjc0OCAxMi45NDMyIDE2Ljg4NjMgMTIuNzU4NyAxNi45MjAzIDEyLjUxMTJMMTcuMjQ4OCAxMC4xMTUzQzE3LjI5IDkuODE0OTYgMTcuMDU2NiA5LjU0NzM3IDE2Ljc1MzUgOS41NDczN0gxNC4wMjg1QzEzLjg2MjggOS41NDczNyAxMy43Mjg1IDkuNDEzMDUgMTMuNzI4NSA5LjI0NzM3VjcuMzg0MzNDMTMuNzI4NSA2LjQwNDQgMTQuMDIwOCA1LjczMzQ4IDE1LjUyNjQgNS43MzM0OEgxNi45MzQzQzE3LjIxMDUgNS43MzM0OCAxNy40MzQzIDUuNTA5NjIgMTcuNDM0MyA1LjIzMzQ4VjMuMTU4MzFDMTcuNDM0MyAyLjkwMTQ2IDE3LjIzOTcgMi42ODU4NyAxNi45ODM4IDIuNjY0NTdDMTYuMjA0MyAyLjU5OTcgMTUuNDIyIDIuNTY4NjIgMTQuNjM5NCAyLjU3MTQ3QzExLjg3MDQgMi41NzE0NyA5Ljk2OTM3IDQuMTUwMzYgOS45NjkzNyA3LjA0ODg3VjkuMjQxMDJDOS45NjkzNyA5LjQwNjcgOS44MzUwNSA5LjU0MTAyIDkuNjY5MzcgOS41NDEwMkg3LjM1NzE4QzcuMDgxMDQgOS41NDEwMiA2Ljg1NzE4IDkuNzY0ODcgNi44NTcxOCAxMC4wNDFWMTIuNDM2OUM2Ljg1NzE4IDEyLjcxMyA3LjA4MTA0IDEyLjkzNjkgNy4zNTcxOCAxMi45MzY5SDkuNjc2MTdDOS44NDE4NSAxMi45MzY5IDkuOTc2MTcgMTMuMDcxMiA5Ljk3NjE3IDEzLjIzNjlWMjEuMTE2NkM5Ljk3NjE3IDIxLjM5MjcgMTAuMiAyMS42MTY2IDEwLjQ3NjIgMjEuNjE2NkgxMy4yMjg1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="/>
+              <div class="span">FB聯絡</div></a></div>
+          </div>
+        </div>
+        <!--
+        ######## ##    ## ########  
+        ##       ###   ## ##     ## 
+        ##       ####  ## ##     ## 
+        ######   ## ## ## ##     ## 
+        ##       ##  #### ##     ## 
+        ##       ##   ### ##     ## 
+        ######## ##    ## ########  
+        每頁 content end
+        -->
+      </main>
+    </div>
+    <!-- #app end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js"></script>
+    <script>
+      $('#button-submit').click(function(){
+        $('.popup').toggleClass('d-none')
+      })
+    </script>
+  <script type="text/javascript" src="assets/js/vendors-chunk.js" defer></script><script type="text/javascript" src="assets/js/commons-chunk.js" defer></script><script type="text/javascript" src="assets/js/rollin.js" defer></script></body>
+</html>
