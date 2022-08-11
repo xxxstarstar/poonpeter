@@ -12,7 +12,7 @@
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Expires" content="0"/>
     <!-- <link rel="image_src" type="image/jpeg" href="assets/img/fb.png?1653551336770"/> -->
-    <link rel="shortcut icon" type="image/ico" href="favicon.png"/>
+    <!-- <link rel="shortcut icon" type="image/ico" href="favicon.png"/> -->
     <!-- [if IE]-->
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
     <!-- [endif]-->
@@ -31,9 +31,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <script src="https://cdn列表物件標題.jsdelivr.net/npm/sweetalert2@10.4.0/dist/sweetalert2.all.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-  <link href="assets/css/vendors-chunk.css" rel="stylesheet"><link href="assets/css/commons-chunk.css" rel="stylesheet">
+    <link href="assets/css/vendors-chunk.css" rel="stylesheet">
+    <link href="assets/css/commons-chunk.css" rel="stylesheet">
   <style>
     /* main {
       max-width: 1024px;
@@ -416,6 +416,12 @@
       $('#button-submit').click(function(){
         $('.popup').toggleClass('d-none')
       })
+
+      // auto play hack
+      $(window).click(function(){
+        $('#player')[0].play()
+      })
+      $('#player')[0].play()
     </script>
   <script type="text/javascript" src="assets/js/vendors-chunk.js" defer></script><script type="text/javascript" src="assets/js/commons-chunk.js" defer></script><script type="text/javascript" src="assets/js/rollin.js" defer></script></body>
 </html>
