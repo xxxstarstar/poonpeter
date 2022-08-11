@@ -19,13 +19,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/css/swiper.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/js/swiper.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/css/swiper.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.2/js/swiper.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.4.0/dist/sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdn列表物件標題.jsdelivr.net/npm/sweetalert2@10.4.0/dist/sweetalert2.all.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
   <link href="assets/css/vendors-chunk.css" rel="stylesheet"><link href="assets/css/commons-chunk.css" rel="stylesheet">
+  <style>
+    /* main {
+      max-width: 1024px;
+      margin: 0 auto;
+    } */
+
+    .main-swiper {
+      max-width: 1024px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  </style>
   <script>
     window.onload = function() {
       var context = new AudioContext();
@@ -39,13 +59,13 @@
       <main>
         <!--
         每頁 content start
-          ######  ########    ###    ########  ######## 
-        ##    ##    ##      ## ##   ##     ##    ##    
-        ##          ##     ##   ##  ##     ##    ##    
-          ######     ##    ##     ## ########     ##    
-              ##    ##    ######### ##   ##      ##    
-        ##    ##    ##    ##     ## ##    ##     ##    
-          ######     ##    ##     ## ##     ##    ##    
+          ######  ########    ###    ########  ########
+        ##    ##    ##      ## ##   ##     ##    ##
+        ##          ##     ##   ##  ##     ##    ##
+          ######     ##    ##     ## ########     ##
+              ##    ##    ######### ##   ##      ##
+        ##    ##    ##    ##     ## ##    ##     ##
+          ######     ##    ##     ## ##     ##    ##
         -->
 
         <div class="bg-sticky" style="background-color: transparent; z-index: -1;"><img class="img" src="assets/img/cloud/beautiful-sky-with-mountains-distance.jpg"/></div>
@@ -69,7 +89,7 @@
             </div>
           </div>
         </div>
-        <div class="block block-swiper rollin rollout rollin-fade">
+        <div class="block block-swiper rollin rollout rollin-fade main-swiper">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -255,10 +275,10 @@
               </div>
               <div class="swiper-slide">
                         <div class="pb-30px"><img class="d-block w-100" src="assets/img/cloud/clouds-g527074ecb_1920.jpg"/>
-                          <div class="h2">列表物件標題
+                          <!-- <div class="h2">列表物件標題
                           </div>
                           <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, minima ipsum nobis, magnam itaque ex quas similique enim laborum, numquam cum? Veniam reiciendis saepe cum quas voluptatum, consequatur impedit quidem!
-                          </div>
+                          </div> -->
                         </div>
               </div>
             </div>
@@ -357,7 +377,7 @@
               </div>
             </div>
           </div>
-        </div>        
+        </div>
 
         <!-- 置底MENU 沒用到先隱藏
         <div class="block-menu">
@@ -372,13 +392,13 @@
         </div>
         -->
         <!--
-        ######## ##    ## ########  
-        ##       ###   ## ##     ## 
-        ##       ####  ## ##     ## 
-        ######   ## ## ## ##     ## 
-        ##       ##  #### ##     ## 
-        ##       ##   ### ##     ## 
-        ######## ##    ## ########  
+        ######## ##    ## ########
+        ##       ###   ## ##     ##
+        ##       ####  ## ##     ##
+        ######   ## ## ## ##     ##
+        ##       ##  #### ##     ##
+        ##       ##   ### ##     ##
+        ######## ##    ## ########
         每頁 content end
         -->
       </main>
