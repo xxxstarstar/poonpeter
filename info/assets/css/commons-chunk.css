@@ -2,3 +2,5 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .block.rollin.rollin-fade{background-color: white;}
 .block.rollin.rollin-fade>*{opacity:0;transition:all 1.5s ease-in-out}
 .block.rollin.in.rollin-fade>*{opacity:1}
+.position-top{background-position: top!important;}
+.swiper-container{overflow: hidden;}
