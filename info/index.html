@@ -25,7 +25,13 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.4.0/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-  <link href="assets/css/vendors-chunk.css" rel="stylesheet"><link href="assets/css/commons-chunk.css" rel="stylesheet"></head>
+  <link href="assets/css/vendors-chunk.css" rel="stylesheet"><link href="assets/css/commons-chunk.css" rel="stylesheet">
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+    </script>
+</head>
   <!-- TODO: 每頁的 body 會有不同 class-->
   <body class="page-index is-imgloading">
     <!-- #app start-->
@@ -336,13 +342,13 @@
                 </div>
                 <div class="p">BGM-《再進沈園》精短版　潘彼得獨唱
                 </div>
+                <div class="mt-2"></div>
+                <iframe src="silence.mp3" allow="autoplay" id="audio"></iframe>
                 <audio id="player" autoplay controls><source src="assets/audio/bgm.mp3" type="audio/mp3"></audio>
               </div>
             </div>
           </div>
-        </div>
-        <!-- <iframe src="silence.mp3" allow="autoplay" id="audio"></iframe> -->
-        
+        </div>        
 
         <!-- 置底MENU 沒用到先隱藏
         <div class="block-menu">
