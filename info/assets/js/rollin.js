@@ -162,7 +162,7 @@
       });
 
       var swiper = new Swiper(".bottom-swiper", {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         centeredSlides: true,
         spaceBetween: 30,
         pagination: {
@@ -173,6 +173,14 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          480: {
+            slidesPerView: 'auto'
+          },
+          1200: {
+            slidesPerView:3
+          }
+        }
       });
   },
   xeH2: function (e, n) {

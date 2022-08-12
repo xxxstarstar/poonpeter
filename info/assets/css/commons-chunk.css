@@ -18,10 +18,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 #my-form label {
+  margin-top: 1em;
   display: block;
 }
 
-#my-form input,
+#my-form .radio label{
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+#my-form .radio input {
+  margin-left: 0.5em;
+}
+
+#my-form input[type=text],
 #my-form textarea {
   margin:0.5em 0;
   width: 100%;
@@ -33,4 +43,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   border: 0px solid #000;
   border-radius: 5px;
   padding: 6px;
+  margin: 0 auto;
+  margin-top:1em;
+  display: block;
+}
+
+.bottom-swiper img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: scale-down;
+}
+
+#my-form-status {
+  margin-top: 1em;
+  font-size: 0.8em;
 }

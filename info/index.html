@@ -35,16 +35,7 @@
     <link href="assets/css/vendors-chunk.css" rel="stylesheet">
     <link href="assets/css/commons-chunk.css" rel="stylesheet">
   <style>
-    /* main {
-      max-width: 1024px;
-      margin: 0 auto;
-    } */
 
-    /* .main-swiper {
-      max-width: 1024px;
-      margin: 0 auto;
-      overflow: hidden;
-    } */
   </style>
   <script>
     window.onload = function() {
@@ -240,7 +231,7 @@
                 <div style="background: rgba(255,255,255,0.6);margin-bottom: 50px;padding: 1em;">
                   <div class="h2" style="color: black;">線上告別式連結
                   </div>
-                  <div class="p" style="color: black">       
+                  <div class="p" style="color: black">
                     <a href="https://www.facebook.com/events/458379742815359/" style="text-decoration: underline;" target="_blank">[Facebook live-stream]</a>
                   </div>
                 </div>
@@ -273,10 +264,16 @@
                       <input type="text" id="name" name="name" required/>
                       <label for="title">與潘老先生的稱謂關係(必):</label>
                       <input type="text" id="title" name="title" required/>
-                      <label for="message">訂購花禮數:</label>
-                      <input type="text" id="message" name="message" />
+
                       <label for="quote">想對潘老先生說的話:</label>
                       <textarea id="quote" name="quote" rows="5"></textarea>
+
+                      <div class="radio">
+                        <label>要訂購花禮嗎？</label>
+                        <label for="flower_yes">是<input type="radio" id="flower_yes" name="flower" value="yes"/></label>
+                        <label for="flower_no">否<input type="radio" id="flower_no" name="flower" value="no" checked/></label>
+                      </div>
+
                       <button id="my-form-button">送出</button>
                       <p id="my-form-status"></p>
                     </form>
@@ -326,18 +323,100 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
               <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
-              <!-- <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
-              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
-              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
-              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
-              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
-              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div> -->
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/1.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/2.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/3.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/4.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/5.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/6.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/7.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/of04.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/fds/pp-solo-03.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137045.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137170.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137172.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137175.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137177.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137186.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/137198.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/2020-10-15-18-02-09-252_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/2020-10-15-18-11-51-085_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4320.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4321.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4323.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4334.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4335.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/4336.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/IMG_20190208_133742.jpg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/IMG_20200306_132112_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/IMG_20200501_175124_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/IMG_20200501_175312_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20190922201107_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20190922201140_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20190922201200_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20191128133414_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20191213001906_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20191228172001_adobe_express.jpeg" /></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/mainfa/O2Cam_20200127182653_adobe_express.jpeg" /></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
+
+        <div class="block-listed rollin rollout">
+          <div #swiperRef="" class="swiper bottom-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/01.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/02.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/03.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/04.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/05.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/06.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/07.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/08.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/09.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/10.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/11.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/12.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/13.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/14.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/15.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/16.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/17.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/18.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/19.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/20.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/21.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/22.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/23.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/24.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/25.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/26.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/27.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/28.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/00.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/01.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/02.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/03.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/04.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/05.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/06.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/07.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/08.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/09.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/137247.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/137250.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideWifes/137251.jpg"/></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+
+
               </div>
             </div>
           </div>
