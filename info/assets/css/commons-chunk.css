@@ -8,3 +8,29 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 @media (orientation: landscape) {
     .h-orientation{height: 56.25vw;min-height: 56.25vw;padding:2.6em 2em;}
   }
+
+
+#my-form {
+  width: 95%;
+  max-width: 300px;
+  text-align: left;
+  margin:0 auto;
+}
+
+#my-form label {
+  display: block;
+}
+
+#my-form input,
+#my-form textarea {
+  margin:0.5em 0;
+  width: 100%;
+}
+
+#my-form-button {
+  font-size: 1.5em;
+  background: #ccc;
+  border: 0px solid #000;
+  border-radius: 5px;
+  padding: 6px;
+}

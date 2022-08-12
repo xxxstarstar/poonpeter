@@ -260,11 +260,80 @@
                   <div class="p" style="color: black">為便於會場統一佈置，如蒙惠賜花籃，請點下圖連結。<br>
                     <a href="https://p.ecpay.com.tw/0448495"><img src="https://payment.ecpay.com.tw/Content/themes/WebStyle20170517/images/ecgo.png" /></a>
                   </div>
+                  <div>
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <form id="my-form" action="https://formspree.io/f/maykyoqn" method="POST">
+                      <label for="name">姓名:</label>
+                      <input type="text" id="name" name="name" required/>
+                      <label for="title">和爸爸稱謂關係:</label>
+                      <input type="text" id="title" name="title" required/>
+                      <label for="message">聯絡資訊(非必要):</label>
+                      <input type="text" id="message" name="message" />
+                      <label for="quote">給爸爸一句話(非必要):</label>
+                      <textarea id="quote" name="quote" rows="5"></textarea>
+                      <button id="my-form-button">送出</button>
+                      <p id="my-form-status"></p>
+                    </form>
+                  <!-- Place this script at the end of the body tag -->
+                  <script>
+                      var form = document.getElementById("my-form");
+
+                      async function handleSubmit(event) {
+                        event.preventDefault();
+                        var status = document.getElementById("my-form-status");
+                        var data = new FormData(event.target);
+                        fetch(event.target.action, {
+                          method: form.method,
+                          body: data,
+                          headers: {
+                              'Accept': 'application/json'
+                          }
+                        }).then(response => {
+                          if (response.ok) {
+                            status.innerHTML = "謝謝您!";
+                            form.reset()
+                          } else {
+                            response.json().then(data => {
+                              if (Object.hasOwn(data, 'errors')) {
+                                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                              } else {
+                                status.innerHTML = "不好意思，系統出了點問題"
+                              }
+                            })
+                          }
+                        }).catch(error => {
+                          status.innerHTML = "不好意思，系統出了點問題"
+                        });
+                      }
+                      form.addEventListener("submit", handleSubmit)
+                  </script>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div class="block-listed rollin rollout">
+          <div #swiperRef="" class="swiper bottom-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
+              <!-- <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5225.jpg"/></div>
+              <div class="swiper-slide"><img class="d-block w-100" src="assets/img/solo/IMGP5227.jpg"/></div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+
+
         <div class="block-listed rollin rollout">
           <div class="swiper-container d-lg-none">
             <div class="swiper-wrapper">
@@ -307,6 +376,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="block-listed rollin rollout">
           <div class="swiper-container d-lg-none">
             <div class="swiper-wrapper">

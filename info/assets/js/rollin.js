@@ -160,6 +160,20 @@
           prevEl: ".block-panorama .swiper-button-prev",
         },
       });
+
+      var swiper = new Swiper(".bottom-swiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
   },
   xeH2: function (e, n) {
     e.exports = $;
