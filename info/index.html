@@ -293,7 +293,9 @@
                           }
                         }).then(response => {
                           if (response.ok) {
-                            status.innerHTML = "感謝您的關懷慰問，並獻上最深的敬意，謝謝!";
+                            const msg = "感謝您的關懷慰問，並獻上最深的敬意，謝謝!";
+                            status.innerHTML = msg
+                            alert(msg)
                             form.reset()
                           } else {
                             response.json().then(data => {
@@ -317,7 +319,7 @@
           </div>
         </div>
 
-        
+
         <div class="block-listed rollin rollout">
           <div class="pt-4"></div>
           <div #swiperRef="" class="swiper bottom-swiper">
@@ -368,7 +370,7 @@
         <div class="block-listed rollin rollout">
           <div #swiperRef="" class="swiper bottom-swiper">
             <div class="swiper-wrapper">
-   
+
               <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/07.jpg"/></div>
               <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/08.jpg"/></div>
               <div class="swiper-slide"><img class="d-block w-100" src="assets/img/PPwith/sideHK/09.jpg"/></div>
@@ -489,6 +491,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js"></script>
     <script>
+
+      setTimeout(function () {
+        let viewheight = $(window).height();
+        let viewwidth = $(window).width();
+        let viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
+      }, 300);
+
       // auto play hack
       $(window).click(function(){
         $('#player')[0].play()
