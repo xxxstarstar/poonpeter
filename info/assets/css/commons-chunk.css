@@ -59,3 +59,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   margin-top: 1em;
   font-size: 0.8em;
 }
+.contain {
+  object-fit: contain;
+}
+.block-listed .swiper-button-next,.block-listed  .swiper-button-prev {
+  color: black;
+}
+.block-listed .swiper-button-next:after,.block-listed .swiper-button-prev:after {
+  font-size: 30px;
+}
